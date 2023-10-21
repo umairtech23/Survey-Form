@@ -1,29 +1,91 @@
-<link rel="stylesheet" href="styles.css">
-<h1 id="title">Survey Form</h1>
-<p id="description">Thank you for taking the time to help us research sport!</p>
-<form id="survey-form" select >
-<label id="name-label"><input required id="name" placeholder="Enter your name" type="text"><label id="name-label"> 
-<input required id="email" placeholder="Enter your email" type="email"></input>
-<input id="number"placeholder="Age"type="number" min="13" max="99"></input>
-<label id="name-label">Name</label>
-<label id="email-label">Email</label>
-<label id="number-label">Age</label>
-<label for="sport-select">Choose a sport:</label>
-<select id="dropdown">
-  <option value="">--Please select an option--</option>
-  <option value="football">Football</option>
-  <option value="basketball">Basketball</option>
-  <option value="boxing">Boxing</option>
-  <option value="wrestling">Wrestling</option>
-  <option value="tennis">Tennis</option>
-  <option value="swimming">Swimming</option>
-</select>
-<select id="dropdown"></select>
-<label>Is sport important?<input type="radio" name="sport" value="Sports are good">Yes</input></label>
-<input type="radio" name="sport" value="Sports are bad">No</input>
-<label><input type="checkbox" value="Football"></label>
-<label><input type="checkbox" value="Football"></label>
-<textarea></textarea>
-<input id="submit" type="submit">
-</form>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <form id="survey-form">
+          <label id="name-label">Name</label>
+          <input id="name" type="text" required
+          placeholder="Enter your name"/>
 
+          <label id="email-label">Email</label>
+          <input type="email" id="email" required placeholder="Enter your email"/>
+
+          <label id="number-label">Age (optional)</label>
+          <input id="number" type="number"
+          min="10" 
+          max="99"
+          placeholder="Age"/>
+
+    <select id="dropdown">
+      <option value="Student">Student</option>
+      <option value="Full Time Job">Full Time Job</option>
+
+          <select>
+        <label>
+          <input
+          value="definitely"
+          name="user-recommend"
+          type="radio"/>
+          Definitely</label>
+
+          <label>
+          <input
+          value="maybe"
+          name="user-recommend"
+          type="radio"/>
+          Maybe</label>
+
+          <label>
+          <input
+          value="not sure"
+          name="user-recommend"
+          type="radio"/>
+          Not sure</label>
+
+          <label>
+            <input
+            value="front-end-projects"
+            type="checkbox"
+            />Front-end Projects</label>
+
+            <label>
+            <input
+            value="back-end-projects"
+            type="checkbox"
+            />Back-end Projects</label>
+
+            <label>
+            <input
+            value="data-visualization"
+            type="checkbox"
+            />Data Visualization</label>
+
+            <label>
+            <input
+            value="challenges"
+            type="checkbox"
+            />Challenges</label>
+
+            <label>
+            <input
+            value="open-source-community"
+            type="checkbox"
+            />Open Source Community</label>
+
+            <textarea></textarea>
+            <input type="submit" id="submit">
+        
+
+
+
+           </form>
+
+
+
+  </body>
