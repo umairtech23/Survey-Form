@@ -6,80 +6,138 @@
   <body>
     <div class="container">
       <header class="header">
-        <h1 id="title">freeCodeCamp Survey Form</h1>
-        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <h1 id="title">Boxing Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us learn more about the interest of boxing!</p>
         <form id="survey-form">
+          <div class="form-group">
           <label id="name-label">Name</label>
           <input id="name" type="text" required
           placeholder="Enter your name"/>
+          </div>
 
+<div class="form-group">
           <label id="email-label">Email</label>
           <input type="email" id="email" required placeholder="Enter your email"/>
+          </div>
 
+<div class="form-group">
           <label id="number-label">Age (optional)</label>
           <input id="number" type="number"
           min="10" 
           max="99"
           placeholder="Age"/>
+          </div>
 
+<div class="form-group">
     <select id="dropdown">
-      <option value="Student">Student</option>
-      <option value="Full Time Job">Full Time Job</option>
+      <option value="active-boxer">Active Boxer</option>
+      <option value="inactive-boxer">Inactive Boxer</option>
+      <option value="hardcore-fan">Hardcore Fan</option>
+      <option value="casual-fan">Casual Fan</option>
+      </div>
 
+<div class="form-group">
           <select>
-        <label>
+            <div>
+        <label> Would you recommend boxing to a friend?
+          </div>
+          <div>
           <input
           value="definitely"
           name="user-recommend"
           type="radio"/>
           Definitely</label>
+          </div>
+          </div>
 
+<div class="form-group">
+  <div>
           <label>
           <input
           value="maybe"
           name="user-recommend"
           type="radio"/>
           Maybe</label>
-
+          </div>
+          
+          <div>
           <label>
           <input
           value="not sure"
           name="user-recommend"
           type="radio"/>
           Not sure</label>
+          </div>
+          </div>
 
-          <label>
+<div class="form-group">
+          <div>
+          <label> Who is your favourite fighter?
+            </div>
+
+            <div>
             <input
-            value="front-end-projects"
+            value="canelo-alvarez"
             type="checkbox"
-            />Front-end Projects</label>
+            />Canelo Alvarez</label>
+            </div>
 
+            <div>
             <label>
             <input
-            value="back-end-projects"
+            value="amir-khan"
             type="checkbox"
-            />Back-end Projects</label>
+            />Amir Khan</label>
+            </div>
 
+            <div>
             <label>
             <input
-            value="data-visualization"
+            value="errol-spence"
             type="checkbox"
-            />Data Visualization</label>
+            />Errol Spence</label>
+            </div>
 
+            <div>
             <label>
             <input
-            value="challenges"
+            value="terrence-crawford"
             type="checkbox"
-            />Challenges</label>
+            />Terrence Crawford</label>
+            </div>
 
+            <div>
             <label>
             <input
-            value="open-source-community"
+            value="errol-spence"
             type="checkbox"
-            />Open Source Community</label>
+            />Errol Spence</label>
+            </div>
+            
+            <div>
+            <label>
+            <input
+            value="ksi"
+            type="checkbox"
+            />KSI</label>
+            </div>
 
-            <textarea></textarea>
-            <input type="submit" id="submit">
+            <div>
+            <label>
+            <input
+            value="logan-paul"
+            type="checkbox"
+            />Logan Paul</label>
+            </div>
+            </div>
+
+            <div class="form-group">
+              <textarea></textarea>
+            <div>
+            <input type="submit" 
+            id="submit">
+            </div>
+            </div>
         
 
 
