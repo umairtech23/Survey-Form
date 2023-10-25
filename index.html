@@ -1,149 +1,112 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <div class="container">
-      <header class="header">
+</head>
+<body>
+    <header class="header">
         <h1 id="title">Boxing Survey Form</h1>
-        <p id="description">Thank you for taking the time to help us learn more about the interest of boxing!</p>
-        <form id="survey-form">
-          <div class="form-group">
-          <label id="name-label">Name</label>
-          <input id="name" type="text" required
-          placeholder="Enter your name"/>
-          </div>
+        <p id="description">Thank you for taking the time to help us learn more about the interest in boxing!</p>
+    </header>
+    <form id="survey-form">
+        <div class="input-element">
+            <label for="name" id="name-label">Name</label>
+            <input id="name" type="text" required placeholder="Enter your name"/>
+        </div>
 
-<div class="form-group">
-          <label id="email-label">Email</label>
-          <input type="email" id="email" required placeholder="Enter your email"/>
-          </div>
+        <div class="input-element">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" required placeholder="Enter your email"/>
+        </div>
 
-<div class="form-group">
-          <label id="number-label">Age (optional)</label>
-          <input id="number" type="number"
-          min="10" 
-          max="99"
-          placeholder="Age"/>
-          </div>
+        <div class="input-element">
+            <label for="number" id="number-label">Age (optional)</label>
+            <input id="number" type="number" min="10" max="99" placeholder="Age"/>
+        </div>
 
-<div class="form-group">
-    <select id="dropdown">
-      <option value="active-boxer">Active Boxer</option>
-      <option value="inactive-boxer">Inactive Boxer</option>
-      <option value="hardcore-fan">Hardcore Fan</option>
-      <option value="casual-fan">Casual Fan</option>
-      </div>
+        <div class="input-element">
+            <label for="dropdown">What type of fan are you?</label>
+            <select id="dropdown">
+                <option value="active-boxer">Active Boxer</option>
+                <option value="inactive-boxer">Inactive Boxer</option>
+                <option value="hardcore-fan">Hardcore Fan</option>
+                <option value="casual-fan">Casual Fan</option>
+            </select>
+        </div>
 
-<div class="form-group">
-          <select>
-            <div>
-        <label> Would you recommend boxing to a friend?
-          </div>
-          <div>
-          <input
-          value="definitely"
-          name="user-recommend"
-          type="radio"/>
-          Definitely</label>
-          </div>
-          </div>
+        <div class="input-element">
+            <fieldset>
+                <legend>Would you recommend boxing to a friend?</legend>
+                <div>
+                    <label>
+                        <input value="definitely" name="user-recommend" type="radio"/> Definitely
+                    </label>
+                </div>
 
-<div class="form-group">
-  <div>
-          <label>
-          <input
-          value="maybe"
-          name="user-recommend"
-          type="radio"/>
-          Maybe</label>
-          </div>
-          
-          <div>
-          <label>
-          <input
-          value="not sure"
-          name="user-recommend"
-          type="radio"/>
-          Not sure</label>
-          </div>
-          </div>
+                <div>
+                    <label>
+                        <input value="maybe" name="user-recommend" type="radio"/> Maybe
+                    </label>
+                </div>
 
-<div class="form-group">
-          <div>
-          <label> Who is your favourite fighter?
-            </div>
+                <div>
+                    <label>
+                        <input value="not sure" name="user-recommend" type="radio"/> Not sure
+                    </label>
+                </div>
+            </fieldset>
+        </div>
 
-            <div>
-            <input
-            value="canelo-alvarez"
-            type="checkbox"
-            />Canelo Alvarez</label>
-            </div>
+        <div class="input-element">
+            <fieldset>
+                <legend>Who is your favorite fighter?</legend>
+                <div>
+                    <label>
+                        <input value="canelo-alvarez" type="checkbox"/> Canelo Alvarez
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input value="terence-crawford" type="checkbox"/> Terence Crawford
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input value="errol-spence" type="checkbox"/> Errol Spence
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input value="amir-khan" type="checkbox"/> Amir Khan
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input value="anthony-joshua" type="checkbox"/> Anthony Joshua
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input value="canelo-alvarez" type="checkbox"/> Canelo Alvarez
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input value="logan-paul" type="checkbox"/> Logan Paul
+                    </label>
+                </div>
 
-            <div>
-            <label>
-            <input
-            value="amir-khan"
-            type="checkbox"
-            />Amir Khan</label>
-            </div>
+            </fieldset>
+        </div>
 
-            <div>
-            <label>
-            <input
-            value="errol-spence"
-            type="checkbox"
-            />Errol Spence</label>
-            </div>
+        <div class="input-element">
+            <label for="comments">Additional Comments</label>
+            <textarea id="comments"></textarea>
+        </div>
 
-            <div>
-            <label>
-            <input
-            value="terrence-crawford"
-            type="checkbox"
-            />Terrence Crawford</label>
-            </div>
-
-            <div>
-            <label>
-            <input
-            value="errol-spence"
-            type="checkbox"
-            />Errol Spence</label>
-            </div>
-            
-            <div>
-            <label>
-            <input
-            value="ksi"
-            type="checkbox"
-            />KSI</label>
-            </div>
-
-            <div>
-            <label>
-            <input
-            value="logan-paul"
-            type="checkbox"
-            />Logan Paul</label>
-            </div>
-            </div>
-
-            <div class="form-group">
-              <textarea></textarea>
-            <div>
-            <input type="submit" 
-            id="submit">
-            </div>
-            </div>
-        
-
-
-
-           </form>
-
-
-
-  </body>
+        <div class="input-element">
+            <input type="submit" id="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
